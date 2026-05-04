@@ -68,3 +68,7 @@ extras/Projucer/JUCECompileEngine.dylib
 CMakeUserPresets.json
 .editorconfig
 
+
+# Premake generated files
+*.vcxproj
+*.vcxproj.filters
