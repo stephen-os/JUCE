@@ -11,6 +11,7 @@ project "JUCE"
     {
         -- Core modules
         "modules/juce_core/juce_core.cpp",
+        "modules/juce_core/juce_core_CompilationTime.cpp",
         "modules/juce_data_structures/juce_data_structures.cpp",
         "modules/juce_events/juce_events.cpp",
         
