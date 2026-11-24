@@ -35,6 +35,7 @@ project "JUCE"
     includedirs
     {
         "modules",
+        "modules/juce_audio_processors_headless/format_types/VST3_SDK",
         "C:/ASIOSDK/common"
     }
 
@@ -42,6 +43,7 @@ project "JUCE"
     {
         "JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
         "JUCE_STANDALONE_APPLICATION=1",
+        "JUCE_PLUGINHOST_VST3=1",
         "JUCE_USE_CURL=0",
         "JUCE_WEB_BROWSER=0",
         "JUCE_USE_DIRECTWRITE=1",
