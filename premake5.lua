@@ -43,6 +43,9 @@ project "JUCE"
     {
         "JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
         "JUCE_STANDALONE_APPLICATION=1",
+        -- Restores MessageManager::runDispatchLoopUntil (default changed to off upstream) --
+        -- needed for NebulaEditor to non-blockingly pump JUCE's GUI loop for native VST editors.
+        "JUCE_MODAL_LOOPS_PERMITTED=1",
         "JUCE_PLUGINHOST_VST3=1",
         "JUCE_USE_CURL=0",
         "JUCE_WEB_BROWSER=0",
